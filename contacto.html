@@ -12,36 +12,87 @@
 
 <body>
     <!-- Encabezado -->
-<header>
-    <div class="nav-fijo">
-        <div class="nav-container">
-            <div class="logo-container">
-            <img src="./imagenes/logo SiriusD Cafe.PNG" alt="logo SiriusD Cafe" class="logo">
+    <header>
+        <div class="nav-fijo">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <img src="./imagenes/logo SiriusD Cafe.PNG" alt="logo SiriusD Cafe" class="logo">
+                </div>
+
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <nav id="nav-menu" class="nav-menu">
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
-
-            <button class="menu-toggle" id="menu-toggle">
-            <i class="fas fa-bars"></i>
-            </button>
-
-            <nav id="nav-menu" class="nav-menu">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-            </nav>
         </div>
-    </div>
-    <div class="header-titles">
-        <h1>Bienvenido a SiriusD Cafe</h1>
-        <h2>Mucho más que café</h2>
-    </div>
-</header>
+        <div class="header-titles">
+            <h1>Bienvenido a SiriusD Cafe</h1>
+            <h2>Mucho más que café</h2>
+        </div>
+    </header>
 
     <!-- Contenido principal -->
     <main>
 
-    
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagenes/cafetera industrial.PNG" class="d-block w-100" alt="cafetera industrial">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>SiriusD Cafe</h5>
+                        <p>Disfruta del momento, disfruta del sabor.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9339.835133468629!2d-66.90343091681329!3d10.187400527417696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1746456540361!5m2!1ses!2sar"
+                        width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ubicacion</h5>
+                        <p>Para llegar a nuestras instalaciones, puedes seguir las siguientes indicaciones.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/flat white arte latte.JPG" class="d-block w-100" alt="Arte latte">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Redes sociales</h5>
+                    <p>No dudes en contactarnos a travez de nuestras redes sociales.
+                    </p>
+                    <a href=""><i class="fa-brands fa-whatsapp" style="color: #d8f4d8;"></i>. WhatsApp</a>
+                    <a href=""><i class="fa-brands fa-instagram" style="color: #d8f4d8;"></i>. Instagram</a>
+                    <a href=""><i class="fa-brands fa-facebook-f" style="color: #d8f4d8;"></i>. Facebook</a>
+                    <a href=""><i class="fa-brands fa-linkedin" style="color: #d8f4d8;"></i>. LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
     </main>
 
     <!-- Pie de página -->
@@ -50,9 +101,11 @@
         <p>Alvaro Duarte - <a href="mailto:alvaroduarte14@gmail.com">alvaroduarte14@gmail.com</a></p>
     </footer>
 
-    
+
     <script src="./java/java.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

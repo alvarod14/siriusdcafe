@@ -17,7 +17,6 @@ body {
     margin-top: 126px; /* Desplaza el bloque debajo del header fijo */
 }
 
-
 .header-titles h1,
 .header-titles h2 {
     margin: 5px 0;
@@ -44,7 +43,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 1px 20px;
   max-width: 1200px;
   margin: auto;
   position: relative;
@@ -175,6 +174,91 @@ main {
   max-height: 500px;
   object-fit: contain;
 }
+
+.card.zoomed {
+  transform: scale(1.08);
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+#productos .card {
+  width: 12rem;        /* más angosta */
+  font-size: 0.75rem;  /* texto más chico */
+  margin: 8px auto;    /* menos espacio */
+  padding: 10px;       /* opcional: reduce espacio interno */
+  transition: transform 0.1.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Amplía toda la tarjeta */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Sombra más marcada */
+}
+
+.card-img-top {
+  width: 90%;                 /* imagen más chica */
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+  display: block;             /* necesario para que funcione margin auto */
+  margin: 0 auto;             /* centra horizontalmente */
+}
+
+.card {
+  overflow: hidden;
+}
+
+/* Estilo para botones dentro de header-titles */
+.header-titles .boton-carrito {
+  background-color: #fff;      /* Fondo claro */
+  color: #333;                 /* Texto oscuro */
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 10px;              /* Espacio entre botones */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-titles .boton-carrito:hover {
+  background-color: #ddd;      /* Cambia a gris suave */
+  color: #000;                 /* Texto más oscuro */
+  transform: scale(1.05);      /* Ligeramente más grande */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.separador {
+  height: 40px;
+  background: linear-gradient(to right, #ddd, #eee, #ddd);
+  margin: 20px 0;
+}
+
+.carousel-caption {
+  background: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente */
+  color: #222; /* Texto oscuro */
+  border-radius: 12px;
+  padding: 15px 25px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.carousel-caption h5,
+.carousel-caption p,
+.carousel-caption a {
+  color: #222; /* Texto bien visible sobre fondo claro */
+}
+
+.carousel-caption a {
+  display: block;
+  margin-top: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 
 /* --- Footer --- */
 footer {

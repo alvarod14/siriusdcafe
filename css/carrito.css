@@ -1,0 +1,18 @@
+.comprar {
+  background-color: #555;      /* gris oscuro para combinar con header */
+  color: #fff;                 /* texto blanco */
+  border: none;
+  border-radius: 12px;         /* bordes redondeados */
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.comprar:hover {
+  background-color: #fff;      /* cambia fondo a blanco */
+  color: #333;                 /* texto oscuro */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}

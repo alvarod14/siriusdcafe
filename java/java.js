@@ -15,3 +15,18 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', () => {
+    const isZoomed = card.classList.contains('zoomed');
+
+    // Quita todas las clases "zoomed"
+    document.querySelectorAll('.card').forEach(c => c.classList.remove('zoomed'));
+
+    // Si la tarjeta no estaba ampliada, la amplía
+    if (!isZoomed) {
+      card.classList.add('zoomed');
+    }
+  });
+});
+
